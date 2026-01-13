@@ -1,4 +1,4 @@
-#include "scramblegen.h"
+#include "scramble_gen.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -7,8 +7,7 @@ int main(int argc, char *argv[]) {
 
   char scramble[30][2];
   genScramble(scramble);
-
-  for (int i = 0; i < 30; i++) {
+  for (int i = 0; i < 20; i++) {
     printf("[");
     for (int j = 0; j < 2; j++) {
       printf("%c", scramble[i][j]);
